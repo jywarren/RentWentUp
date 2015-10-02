@@ -1,8 +1,37 @@
 body {
+
   margin: 20px auto;
   width:700px;
+
 }
 
 p {
+
   text-align: center;
+
+}
+
+.header {
+
+  margin-top: 50px;
+
+}
+
+.header h1 {
+
+  font-weight: normal;
+
+}
+
+.header .links {
+
+  padding-top: 16px;
+  float: right;
+
+}
+
+#twitter-widget-0 {
+
+  vertical-align: bottom;
+
 }

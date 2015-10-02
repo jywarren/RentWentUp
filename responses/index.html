@@ -6,23 +6,63 @@
 
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-    <link href="bower_components/bootstrap-css/css/bootstrap.css" rel="stylesheet">
-    <link href="bower_components/fontawesome/css/font-awesome.min.css" rel="stylesheet">
+    <link href="../bower_components/bootstrap-css/css/bootstrap.css" rel="stylesheet">
+    <link href="../bower_components/fontawesome/css/font-awesome.min.css" rel="stylesheet">
     <link href="../rentwentup.css" rel="stylesheet">
 
   </head>
 
   <body>
 
+    <div id="fb-root"></div>
+    <script>(function(d, s, id) {
+      var js, fjs = d.getElementsByTagName(s)[0];
+      if (d.getElementById(id)) return;
+      js = d.createElement(s); js.id = id;
+      js.src = "//connect.facebook.net/en_US/sdk.js#xfbml=1&version=v2.4";
+      fjs.parentNode.insertBefore(js, fjs);
+    }(document, 'script', 'facebook-jssdk'));</script>
+
+    <div class="header">
+
+      <div class="links">
+        <a href="/">Survey</a> | 
+        <a href="/responses/">Responses</a> | 
+        <a href="http://unionunitedsomerville.com">Union United</a> 
+      </div>
+
+      <h1>Rent went up?</h1>
+
+    </div>
+
     <div class="container-fluid">
 
-      <p><a href="/">&laquo; Back to survey</a></p>
+
+
+      <div id="social">
+
+        <a href="/">&laquo; Back to survey</a>
+
+        <div style="" class="fb-share-button" data-href="http://rentwentup.com" data-layout="button_count"></div>
+
+        <a href="https://twitter.com/share" class="twitter-share-button" data-url="http://rentwentup.com" data-via="UnionUnited2014" data-hashtags="rentwentup">Tweet</a>
+        <script>!function(d,s,id){var js,fjs=d.getElementsByTagName(s)[0],p=/^http:/.test(d.location)?'http':'https';if(!d.getElementById(id)){js=d.createElement(s);js.id=id;js.src=p+'://platform.twitter.com/widgets.js';fjs.parentNode.insertBefore(js,fjs);}}(document, 'script', 'twitter-wjs');</script>
+
+      </div>
+
+      <p>Learn more about rising rents and housing equality in Union Square, Somerville, at <a href="http://unionunitedsomerville.com">Union United</a>.</p>
 
       <iframe width="100%" style="border:none;" height="500px" src="https://docs.google.com/spreadsheets/d/1qqaqI7a_gWDtIUeFCk-2s2-jarO62W09WzywWBf3KwQ/pubchart?oid=324125659&amp;format=interactive"></iframe>
 
       <iframe width="100%" style="border:none;" height="500px" src="https://docs.google.com/spreadsheets/d/1qqaqI7a_gWDtIUeFCk-2s2-jarO62W09WzywWBf3KwQ/pubchart?oid=236670735&amp;format=interactive"></iframe>
-      
+
+
+ 
     </div>
+
+    <footer>
+      <p>Survey by <a href="http://unterbahn.com">Jeff Warren</a> | <a href="http://unionunitedsomerville.com">Union United</a>, Somerville, MA</p>
+    </footer>
 
   </body>
 
